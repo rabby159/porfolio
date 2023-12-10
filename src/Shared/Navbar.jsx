@@ -1,24 +1,24 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from '../../public/logo.svg'
+import logo from "../../public/logo.svg";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa6";
 
 const Navbar = () => {
   const namOption = (
     <>
       <li>
-        <NavLink to='/'>Home</NavLink>
+        <NavLink to="/">Home</NavLink>
       </li>
       <li>
-        <NavLink to='/project'>Project</NavLink>
+        <NavLink to="/project">Project</NavLink>
       </li>
       <li>
-        <NavLink to='/technologies'>Technologies</NavLink>
+        <NavLink to="/technologies">Technologies</NavLink>
       </li>
       <li>
-        <NavLink to='/about'>About</NavLink>
+        <NavLink to="/about">About</NavLink>
       </li>
       <li>
-        <NavLink to='/contact'>Contact</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
       </li>
     </>
   );
@@ -51,24 +51,31 @@ const Navbar = () => {
               {namOption}
             </ul>
           </div>
-            <img className="w-12" src={logo} alt="" />
+          <img className="w-12" src={logo} alt="" />
           <p className=" ml-2 font-semibold text-2xl">mdrabby</p>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 text-lg">
-            {namOption}
-          </ul>
+          <ul className="menu menu-horizontal px-1 text-lg">{namOption}</ul>
         </div>
         <div className="navbar-end space-x-5 group">
-        <Link to={'https://github.com/rabby159'} className="text-4xl group-hover:blur-sm hover:!blur-none">
+          <Link
+            to={"https://github.com/rabby159"}
+            className="text-4xl group-hover:blur-sm hover:!blur-none"
+          >
             <FaGithub></FaGithub>
-        </Link>
-        <Link to={'https://www.facebook.com/mdrabby159'} className="text-4xl group-hover:blur-sm hover:!blur-none">
+          </Link>
+          <Link
+            to={"https://www.facebook.com/mdrabby159"}
+            className="text-4xl group-hover:blur-sm hover:!blur-none"
+          >
             <FaFacebook></FaFacebook>
-        </Link>
-        <Link to={'https://www.linkedin.com/in/md-rabby159/'} className="text-4xl group-hover:blur-sm hover:!blur-none">
+          </Link>
+          <Link
+            to={"https://www.linkedin.com/in/md-rabby159/"}
+            className="text-4xl group-hover:blur-sm hover:!blur-none"
+          >
             <FaLinkedin></FaLinkedin>
-        </Link>
+          </Link>
         </div>
       </div>
     </div>
