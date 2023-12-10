@@ -1,5 +1,6 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from '../../public/logo.svg'
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa6";
 
 const Navbar = () => {
   const namOption = (
@@ -54,12 +55,20 @@ const Navbar = () => {
           <p className=" ml-2 font-semibold text-2xl">mdrabby</p>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 text-lg">
             {namOption}
           </ul>
         </div>
-        <div className="navbar-end">
-          <a className="btn">Button</a>
+        <div className="navbar-end space-x-5 group">
+        <Link to={'https://github.com/rabby159'} className="text-4xl group-hover:blur-sm hover:!blur-none">
+            <FaGithub></FaGithub>
+        </Link>
+        <Link to={'https://www.facebook.com/mdrabby159'} className="text-4xl group-hover:blur-sm hover:!blur-none">
+            <FaFacebook></FaFacebook>
+        </Link>
+        <Link to={'https://www.linkedin.com/in/md-rabby159/'} className="text-4xl group-hover:blur-sm hover:!blur-none">
+            <FaLinkedin></FaLinkedin>
+        </Link>
         </div>
       </div>
     </div>
