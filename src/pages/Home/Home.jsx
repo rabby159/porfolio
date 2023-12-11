@@ -2,6 +2,10 @@ import { Link, useLoaderData } from "react-router-dom";
 import Navbar from "../../Shared/Navbar";
 import Project from "../../Shared/Project";
 import Banner from "./Banner";
+import Technology from "./Technology";
+import About from "./About";
+import Achievement from "./achievement";
+import Contact from "./Contact";
 
 const Home = () => {
   const projects = useLoaderData();
@@ -11,7 +15,7 @@ const Home = () => {
       <Navbar></Navbar>
       <Banner></Banner>
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-[#111]  text-5xl mb-8 font-bold text-transparent bg-clip-text bg-gradient-to-r to-slate-600 from-black">
+        <h1 className="text-[#111]  text-4xl mb-8 font-bold text-transparent bg-clip-text bg-gradient-to-r to-slate-600 from-black">
           Projects
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
@@ -27,6 +31,10 @@ const Home = () => {
           </Link>
         </div>
       </div>
+      <Technology></Technology>
+      <About></About>
+      <Achievement></Achievement>
+      <Contact></Contact>
     </div>
   );
 };
