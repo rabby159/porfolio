@@ -1,7 +1,23 @@
 import { FaEnvelope, FaLocationArrow, FaPhone } from "react-icons/fa";
+import emailjs from '@emailjs/browser';
+import { useRef } from "react";
+
 
 
 const Contact = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_68dr852', 'template_rhm9xq8', form.current, 'yGaVojgBxH4mOxreC')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+      };
+
     return (
         <div className="max-w-7xl mx-auto">
             <div className="mb-20 p-5">
@@ -41,12 +57,14 @@ const Contact = () => {
                     </div>
                     <div className="bg-base-100 p-5 rounded-xl shadow-lg">
                         <h1  className="text-[#111] text-4xl lg:text-5xl  font-bold mb-5 text-transparent bg-clip-text bg-gradient-to-r to-slate-600 from-black">Let’s work together.</h1>
-                        <input type="text" placeholder="Name" className="input input-bordered w-full mb-3" /> <br></br> 
-                        <input type="text" placeholder="Email" className="input input-bordered w-full mb-3" /> <br></br>
+                        <form ref={form} onSubmit={sendEmail}> 
+                        <input type="text" placeholder="Name" name="from_name" className="input input-bordered w-full mb-3" /> <br></br> 
+                        <input type="text" placeholder="Email" name="from_email" className="input input-bordered w-full mb-3" /> <br></br>
                         <div className="form-control">
-                            <textarea className="textarea textarea-bordered h-24" placeholder="Message"></textarea>
+                            <textarea className="textarea textarea-bordered h-24" placeholder="Message" name="message"></textarea>
                           </div>
                           <button className="btn btn-block mt-3 bg-gradient-to-r to-slate-600 from-black text-white">Send</button>
+                        </form>
                     </div>
                 </div>
             </div>
