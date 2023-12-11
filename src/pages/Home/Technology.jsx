@@ -10,7 +10,8 @@ const Technology = () => {
                 <p className="my-5 text-[#333232] font-medium text-lg lg:text-2xl md:text-left text-justify">I have a diverse skill set in web development, encompassing everything from creative design to robust backend implementation.</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     {/* <!-- tech 1  --> */}
-                    <div className="bg-base-100 p-4 rounded shadow-lg" data-aos="zoom-in">
+                    <div className="bg-base-100 p-4 rounded shadow-lg" data-aos="zoom-in" data-aos-delay="50"
+    data-aos-duration="1000">
                         <div>
                             <FaReact className="text-3xl"></FaReact>
                             <h1 className="text-[#111] text-xl font-bold">Front-End</h1>
@@ -21,7 +22,8 @@ const Technology = () => {
                         </div>
                     </div>
                     {/* <!-- tech 2  --> */}
-                    <div className="bg-base-100 p-4 rounded shadow-lg" data-aos="zoom-in">
+                    <div className="bg-base-100 p-4 rounded shadow-lg" data-aos="zoom-in" data-aos-delay="50"
+    data-aos-duration="1000">
                         <div>
                             <FaServer className="text-3xl"></FaServer>
                             <h1 className="text-[#111] text-xl font-bold">Backend</h1>
@@ -31,7 +33,8 @@ const Technology = () => {
                         </div>
                     </div>
                     {/* <!-- tech 3  --> */}
-                    <div className="bg-base-100 p-4 rounded shadow-lg" data-aos="zoom-in">
+                    <div className="bg-base-100 p-4 rounded shadow-lg" data-aos="zoom-in" data-aos-delay="50"
+    data-aos-duration="1000">
                        <div>
                             <FaFigma className="text-3xl"></FaFigma>
                             <h1 className="text-[#111] text-xl font-bold">Design</h1>
@@ -41,7 +44,8 @@ const Technology = () => {
                        </div>
                     </div>
                     {/* <!-- tech 4  --> */}
-                    <div className="bg-base-100 p-4 rounded shadow-lg" data-aos="zoom-in">
+                    <div className="bg-base-100 p-4 rounded shadow-lg" data-aos="zoom-in" data-aos-delay="50"
+    data-aos-duration="1000">
                         <div>
                         <FaStackOverflow className="text-3xl" />
                             <h1 className="text-[#111] text-xl font-bold">Full-Stack</h1>
@@ -51,7 +55,8 @@ const Technology = () => {
                         </div>
                     </div>
                     {/* <!-- tech 5  --> */}
-                    <div className="bg-base-100 p-4 rounded shadow-lg" data-aos="zoom-in">
+                    <div className="bg-base-100 p-4 rounded shadow-lg" data-aos="zoom-in" data-aos-delay="50"
+    data-aos-duration="1000">
                         <div>
                             <FaToolbox className="text-3xl"></FaToolbox>
                             <h1 className="text-[#111] text-xl font-bold">Tools</h1>
@@ -62,7 +67,8 @@ const Technology = () => {
                         </div>
                     </div>
                     {/* <!-- tech 6  --> */}
-                    <div className="bg-base-100 p-4 rounded shadow-lg" data-aos="zoom-in">
+                    <div className="bg-base-100 p-4 rounded shadow-lg" data-aos="zoom-in" data-aos-delay="50"
+    data-aos-duration="1000">
                         <div>
                             <FaCode className="text-3xl"></FaCode>
                             <h1 className="text-[#111] text-xl font-bold">Still Learning</h1>

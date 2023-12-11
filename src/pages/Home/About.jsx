@@ -8,7 +8,8 @@ const About = () => {
                 <p className="my-5 text-[#333232] font-medium text-lg lg:text-2xl md:text-left text-justify">I am a curious tech lover who always wants to learn, and I enjoy crafting awesome websites and digital creations!</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
                     {/* <!-- about 1  --> */}
-                    <div className=" md:border-r-2" data-aos="fade-right">
+                    <div className=" md:border-r-2" data-aos="fade-right" data-aos-delay="50"
+    data-aos-duration="1000">
                         <div>
                             <div className="flex gap-1">
                                 <h1 className="text-[#111] text-xl font-bold">2020</h1>
@@ -18,7 +19,8 @@ const About = () => {
                         </div>
                     </div>
                     {/* <!-- about 2  --> */}
-                    <div className="lg:border-r-2" data-aos="fade-right">
+                    <div className="lg:border-r-2" data-aos="fade-right" data-aos-delay="50"
+    data-aos-duration="1000">
                         <div>
                             <div className="flex gap-1">
                                 <h1 className="text-[#111] text-xl font-bold">2021</h1>
@@ -28,7 +30,8 @@ const About = () => {
                         </div>
                     </div>
                     {/* <!-- about 3  --> */}
-                    <div className="md:border-r-2" data-aos="fade-left">
+                    <div className="md:border-r-2" data-aos="fade-right" data-aos-delay="50"
+    data-aos-duration="1000">
                        <div>
                         <div className="flex gap-1">
                             <h1 className="text-[#111] text-xl font-bold">2022</h1>
@@ -39,7 +42,8 @@ const About = () => {
                     </div>
                     {/* <!-- about 4  --> */}
                     <div>
-                        <div data-aos="fade-left">
+                        <div data-aos="fade-right" data-aos-delay="50"
+    data-aos-duration="1000">
                             <div className="flex gap-1">
                                 <h1 className="text-[#111] text-xl font-bold">2023</h1>
                                 <FaFeatherPointed className="text-xl"></FaFeatherPointed>
