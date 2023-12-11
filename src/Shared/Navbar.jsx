@@ -60,18 +60,21 @@ const Navbar = () => {
         <div className="navbar-end space-x-5 group">
           <Link
             to={"https://github.com/rabby159"}
+            target="_blank"
             className="text-4xl group-hover:blur-sm hover:!blur-none"
           >
             <FaGithub></FaGithub>
           </Link>
           <Link
             to={"https://www.facebook.com/mdrabby159"}
+            target="_blank"
             className="text-4xl group-hover:blur-sm hover:!blur-none"
           >
             <FaFacebook></FaFacebook>
           </Link>
           <Link
             to={"https://www.linkedin.com/in/md-rabby159/"}
+            target="_blank"
             className="text-4xl group-hover:blur-sm hover:!blur-none"
           >
             <FaLinkedin></FaLinkedin>

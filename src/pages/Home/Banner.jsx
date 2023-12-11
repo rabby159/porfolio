@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 
 import resume from '../../assets/images/CV Of Md Rabby.pdf'
 import about from '../../assets/images/aboutme.jpg'
