@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 
-import resume from '../../assets/images/CV Of Md Rabby.pdf'
+import resume from '../../assets/images/Md Rabby-resume.pdf'
 import about from '../../assets/images/aboutme.jpg'
 import project from '../../assets/images/project .jpg'
 import blog from '../../assets/images/blog.jpg'
