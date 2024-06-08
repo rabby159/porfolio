@@ -49,6 +49,29 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               {namOption}
+              <div className="flex items-center justify-center gap-5">
+                <Link
+                  to={"https://github.com/rabby159"}
+                  target="_blank"
+                  className="text-2xl group-hover:blur-sm hover:!blur-none"
+                >
+                  <FaGithub></FaGithub>
+                </Link>
+                <Link
+                  to={"https://www.facebook.com/mdrabby159"}
+                  target="_blank"
+                  className="text-2xl group-hover:blur-sm hover:!blur-none"
+                >
+                  <FaFacebook></FaFacebook>
+                </Link>
+                <Link
+                  to={"https://www.linkedin.com/in/md-rabby159/"}
+                  target="_blank"
+                  className="text-2xl group-hover:blur-sm hover:!blur-none"
+                >
+                  <FaLinkedin></FaLinkedin>
+                </Link>
+              </div>
             </ul>
           </div>
           <img className="w-12" src={logo} alt="" />
@@ -57,7 +80,7 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 text-lg">{namOption}</ul>
         </div>
-        <div className="navbar-end space-x-5 group">
+        <div className="navbar-end space-x-5 group hidden md:flex">
           <Link
             to={"https://github.com/rabby159"}
             target="_blank"
